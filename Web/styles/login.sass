@@ -1,0 +1,54 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap')
+
+$violeta: rgba(154,37,202,255)
+$verde: #07575B
+
+* 
+	padding: 0
+	margin: 0
+	box-sizing: border-box
+
+body 
+	font-family: 'Playfair Display', sans-serif
+	background-image: url("../images/fondo.jpg")
+	background-size: cover
+
+
+.wrapper 
+	max-width: 500px
+	border-radius: 10px
+	margin: 50px auto
+	padding: 30px 40px
+
+.h2 
+	font-family: 'Playfair Display', cursive
+	font-size: 3.5rem
+	font-weight: bold
+	color: $verde
+	font-style: italic
+
+.input-field 
+	border-radius: 5px
+	padding: 5px
+	display: flex
+	align-items: center
+	cursor: pointer
+	border: 1px solid $verde
+	color: $verde
+	&:hover 
+		color: $violeta
+		border: 1px solid $violeta
+input 
+	border: none
+	outline: none
+	box-shadow: none
+	width: 100%
+	padding: 0px 2px
+
+.btn.btn-block 
+	border-radius: 20px
+	background-color: $verde
+	color: #ffffff
+	&:hover 
+		background-color: $violeta

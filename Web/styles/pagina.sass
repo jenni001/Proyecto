@@ -1,0 +1,129 @@
+$border-radius: 10px
+$perlado: #FDFEFE 
+$violeta: rgba(154,37,202,255)
+$verdeClaro: #66A5AD
+$verdeMedio: #07575B
+$verdeOscuro: #003B46
+$negro: black
+$gris: rgba(0, 0, 0, 0.5)
+$blanco: white
+$azulClaro: #C4DFE6
+$sombra: #888
+
+
+body
+    background-color: $azulClaro
+    font-family: 'Playfair Display', sans-serif
+
+    nav.navbar.navbar-expand-md 
+        background-color: $verdeOscuro
+        
+        a
+            color: $perlado
+           
+    h1 
+        text-align: center
+        margin-top: 2%
+        margin-bottom: 4%
+        font-weight: bold
+        background-color: $perlado
+
+    #contenedorMapa
+        margin-bottom: 5%
+        padding: 20px
+
+        button
+            margin-left: 15%
+            width: 70%
+            background-color: $negro
+            color: $blanco
+            text-align: right
+            border: none
+            border-top-left-radius: $border-radius 
+            border-top-right-radius: $border-radius
+            box-shadow: 5px 5px 5px $sombra
+
+        #map
+            width: 70%
+            height: 50vh
+            border: solid 10px $negro 
+            border-bottom-left-radius: $border-radius 
+            border-bottom-right-radius: $border-radius
+            box-shadow: 5px 5px 5px $sombra
+            margin: 0 auto
+
+        .border10px
+            border-radius: $border-radius
+    h2 
+        text-align: center
+        margin-bottom: 5%
+        font-weight: bold
+        font-style: italic
+        background-color: $perlado
+
+    #panel
+        margin: 0 auto
+        width: 80%
+
+        #panelesOpciones
+            display: flex
+            flex-wrap: wrap
+            align-items: center
+            justify-content: space-around
+            grid-column-gap: 0.5em
+         
+            div
+                border: solid 1px $gris
+                max-width: 200px
+                min-height: 40px
+                padding: 0.5em
+                text-align: center 
+                background-color: $verdeMedio
+                color: $blanco 
+                cursor: pointer  
+                z-index: 100 
+                border-radius: $border-radius
+
+        #panelesPueblos
+            margin-top: 4%
+            display: flex
+            flex-wrap: wrap
+            align-items: center
+            justify-content: space-around
+            margin-bottom: 100px
+
+            .card
+                border: solid 1px $gris
+                padding: 0.5em
+                text-align: center 
+                color: $blanco    
+                background-color: $verdeClaro
+                width: 200px
+
+                i 
+                    text-align: right
+
+                i:hover
+                    color: green
+                    cursor: pointer
+
+                p
+                    font-size: 12px
+                    cursor: pointer
+                    border: 5px solid $gris
+                    background-color: $verdeClaro
+
+        #iBasura
+            margin-top: 4%
+            width: 150px
+            
+            i
+                text-align: right
+                font-size: 100px
+
+            i:hover
+                color: $violeta
+                cursor: pointer
+
+
+    

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title> 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css"
+      integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://use.fontawesome.com/releases/v5.7.2/css/all.css' rel='stylesheet'>
+    <link rel="stylesheet"  href="styles/login.sass">
+
+</head>
+<body>
+<div class="wrapper bg-white">
+    <div class="h2 text-center">METEOROLOGIA</div>
+    <form class="pt-3">
+        <div class="form-group py-2">
+            <div class="input-field"> <span class="far fa-user p-2"></span> <input id="iUsuario" type="text" placeholder="Usuario" required > </div>
+        </div>
+        <div class="form-group py-1 pb-2">
+            <div class="input-field"> <span class="fas fa-lock p-2"></span> <input id="iContrasena" type="text" placeholder="Contraseña" required > </div>
+        </div>
+        <button class="btn btn-block text-center my-3"type="button" id="boton">Acceder</button>
+    </form>
+</div>
+<script src="scripts/main.js" type="module"></script>
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js"
+integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA=="
+crossorigin="anonymous"
+referrerpolicy="no-referrer"
+></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"
+integrity="sha512-OvBgP9A2JBgiRad/mM36mkzXSXaJE9BEIENnVEmeZdITvwT09xnxLtT4twkCa8m/loMbPHsvPl0T8lRGVBwjlQ=="
+crossorigin="anonymous"
+referrerpolicy="no-referrer"></script>
+</body>
+</html>

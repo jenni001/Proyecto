@@ -1,0 +1,30 @@
+version: '3.1'
+services:
+  api:
+    build:
+      context: .
+      dockerfile: DockerfileApi
+    restart: always
+    image: api
+    expose:
+      - 80
+    networks:
+      - proyectoNetwork
+  datos:
+    build:
+      context: .
+      dockerfile: DockerfileDatos
+    restart: always
+    image: datos
+    networks:
+      - proyectoNetwork
+  proxy:
+    image: nginx
+    ports:
+      - 80:80
+    volumes:
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+    networks:
+      - proyectoNetwork
+networks:
+  proyectoNetwork:
